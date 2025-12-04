@@ -4,12 +4,8 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
@@ -19,10 +15,8 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
@@ -34,10 +28,8 @@ import com.example.jc_ui_components_bottom_nav_bar.ui.components.HomeScreen
 import com.example.jc_ui_components_bottom_nav_bar.ui.components.ProfileScreen
 import com.example.jc_ui_components_bottom_nav_bar.ui.components.SearchScreen
 import com.example.jc_ui_components_bottom_nav_bar.ui.theme.JCAlertDialogBottomNavBarTheme
-import com.example.jc_ui_components_bottom_nav_bar.ui.theme.Teal10
-import com.example.jc_ui_components_bottom_nav_bar.ui.theme.Teal40
+import com.example.jc_ui_components_bottom_nav_bar.ui.theme.SemiTransparent
 import com.example.jc_ui_components_bottom_nav_bar.ui.theme.Teal60
-import com.example.jc_ui_components_bottom_nav_bar.ui.theme.Teal80
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -107,7 +99,7 @@ fun BottomNavigationBar(navController: NavHostController) {
                     unselectedIconColor = Color.White,
                     selectedTextColor = Color.White,
                     unselectedTextColor = Color.White,
-                    indicatorColor = Teal10
+                    indicatorColor = SemiTransparent
                 )
             )
         }

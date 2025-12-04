@@ -14,5 +14,5 @@ val Teal80 = Color(0xFF008080)
 val Teal60 = Color(0xFF006666)
 val Teal40 = Color(0xFF004c4c)
 
-val Teal10 = Color(0x40000000)
+val SemiTransparent = Color(0x40000000)
 
